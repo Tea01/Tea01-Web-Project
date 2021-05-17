@@ -1,0 +1,94 @@
+body {
+    font-family: "Merienda", sans-serif;
+    background: linear-gradient(rgba(243, 89, 83, 0.925),rgba(0, 0, 0, 0.76) ) ;
+    min-height: 100vh; 
+}
+.brand-wrapper {
+    margin-bottom: 30px; 
+    margin-top: -60px;
+}
+.brand-wrapper .logo {
+    width: 50px;
+}
+  
+.login-card {
+    border: 0;
+    border-radius: 27.5px;
+    box-shadow: 0 10px 30px 0 rgba(2, 59, 10, 0.43);
+    overflow: hidden;
+    background: linear-gradient(rgba(235, 95, 90, 0.774), rgba(2, 0, 0, 0.63));
+}
+.login-card-img {
+    border-radius: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; 
+}
+.login-card .card-body {
+    padding: 85px 60px 60px; 
+}
+@media (max-width: 422px) {
+    .login-card .card-body {
+        padding: 35px 24px; 
+    } 
+}
+.login-card-description {
+    font-size: 25px;
+    color: rgb(19, 18, 18);
+    font-weight: normal;
+    margin-bottom: 23px; 
+}
+.login-card form {
+    max-width: 326px; 
+}
+.login-card .form-control {
+    border: 1px solid #d5dae2;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+    min-height: 45px;
+    font-size: 13px;
+    line-height: 15;
+    font-weight: normal; 
+}
+.login-card .form-control::-webkit-input-placeholder {
+    color: #919aa3; 
+}
+.login-card .form-control::-moz-placeholder {
+    color: #919aa3; 
+}
+.login-card .form-control:-ms-input-placeholder {
+    color: #919aa3; 
+}
+.login-card .form-control::-ms-input-placeholder {
+    color: #919aa3; 
+}
+.login-card .form-control::placeholder {
+    color: #919aa3; 
+}
+.login-card .login-btn {
+    padding: 13px 20px 12px;
+    background-color: rgb(12, 0, 0);
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 24px; 
+}
+.login-card .login-btn:hover {
+    border: 1px solid #000;
+    background-color: rgb(209, 12, 12);
+    color: rgb(233, 221, 221); 
+}
+@media (max-width: 767px) {
+    .login-card-footer-text {
+        margin-bottom: 24px; 
+    } 
+}
+.notification
+{
+    color: while;
+    font-weight: bold;
+}

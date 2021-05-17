@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nothing You Could Do", sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    position:absolute;
+    top:0;
+}
+#slideImg{
+    width: 100%;
+    height: 100%;
+    animation: zoom 3s linear infinite;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(1.2);
+    }
+    15%{
+        transform: scale(1.1);
+    }
+    85%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    position: absolute;
+    top:0;
+}
+.logo
+{
+    display: flex;
+    align-items:left;
+    margin:25px;
+    flex-basis: 15%;
+}
+.logo img
+{
+    width: 50px;
+}
+.content
+{
+    width:60%;
+    margin: 160px auto 0;
+    text-align: center;
+    color: azure;
+    text-align: bold;
+}
+.content h1
+{
+    font-size: 64px;
+}
+.content h4{
+    width: 60%;
+    margin: 20px auto 100px;
+    font-family: 'New Tegomin';
+    font-weight: 20px;
+    line-height: 28px;
+}
+button
+{
+    width: 170px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 35px;
+    font-size: 24px;
+    font-family: 'Sunshiney';
+    font-weight: bold;
+    border: 2px solid rgb(0, 0, 0);
+    background:  rgba(168, 30, 6, 0.87) ;
+    color: white;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid white
+}
+
