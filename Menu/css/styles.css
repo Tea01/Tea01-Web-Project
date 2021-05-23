@@ -78,7 +78,7 @@ main{
     filter: grayscale(150%) opacity(2) brightness(1);
     transition: var(--transition-speed);
     color: rgb(255, 255, 255);
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: -1rem;
 }
 .nav-link:hover{
@@ -101,8 +101,8 @@ main{
 .logo{
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 40px;
-    margin-left: -66px;
+    margin-bottom: 30px;
+    margin-left: -50px;
     color: white;
     background: var(--bg-secondary);
     font-size: 1.5rem;

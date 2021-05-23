@@ -19,17 +19,10 @@ body::-webkit-scrollbar-track{
 body::-webkit-scrollbar-thumb{
     background: #940000b6;
 }
-.flag{
-    margin-top: 2rem; 
-    width: 80%; 
-    height: auto;
-    margin-left: 10%;
-    border: 5px black solid;
 
-}
 #backphoto{
     background-color: rgb(0, 0, 0);
-    background-image: url("../../../Giris\ Sayfasi/images/logo1bg.jpg");
+    background-image: url("../mylife/images/backvc.jpg");
     background-position:top, bottom;
     background-repeat: repeat;    
 }
@@ -37,9 +30,13 @@ body::-webkit-scrollbar-thumb{
     color: rgb(255, 255, 255);
     font-family: 'Alice' bold;
     margin-top:2rem;
-    font-size: 20px;
-    text-align: center;
+    font-size: 15px;
+    text-align:left;
     text-shadow: 5px 5px 30px #000000;
+}
+.image{
+   margin-top: 20px;
+   margin-left: 70px;
 }
 .navbar
 {
@@ -59,12 +56,13 @@ body::-webkit-scrollbar-thumb{
     flex-direction: column;
 }
 .nav-item{
-    color: rgb(255, 255, 255);
+    
+    color: rgb(255, 254, 254);
 }
 .nav-link{
     display:flex;
     align-items:center;
-    width: 30px;
+    width: 91px;
     color: var(--text-primary);
     text-decoration: none;
     filter: grayscale(150%) opacity(2) brightness(1);
@@ -76,7 +74,7 @@ body::-webkit-scrollbar-thumb{
 .nav-link:hover{
     filter: grayscale(5%) opacity(1);
     background: var(--bg-secondary);
-    color:rgb(160, 0, 0);
+    color:rgb(212, 2, 2);
 }
 .link-text{
     display: none;
@@ -93,8 +91,8 @@ body::-webkit-scrollbar-thumb{
 .logo{
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 30px;
-    margin-top: -50px;
+    margin-bottom: 100px;
+    margin-top: -10px;
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.2ch;
@@ -115,7 +113,7 @@ body::-webkit-scrollbar-thumb{
 /* Small Screens*/
 @media only screen and (max-width:600px){
     .navbar{
-        bottom: 10px;
+        bottom: 0px;
         width: 100vw;
         height: 5rem;
         font-size: 0%;
@@ -131,8 +129,8 @@ body::-webkit-scrollbar-thumb{
     }
     .nav-item{
         display:inline-table;
-        margin-left: 28px;
-        margin-top: -45px;
+        margin-left: 5px;
+        margin-top: -20px;
     }
     .nav-link{
         justify-content: center;

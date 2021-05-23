@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb{
 .nav-link{
     display:flex;
     align-items:center;
-    width: 30px;
+    width: 20px;
     color: var(--text-primary);
     text-decoration: none;
     filter: grayscale(150%) opacity(2) brightness(1);
@@ -76,7 +76,7 @@ body::-webkit-scrollbar-thumb{
 .nav-link:hover{
     filter: grayscale(5%) opacity(1);
     background: var(--bg-secondary);
-    color:rgb(160, 0, 0);
+    color:rgb(212, 2, 2);
 }
 .link-text{
     display: none;
@@ -101,7 +101,7 @@ body::-webkit-scrollbar-thumb{
     background: rgb(145, 0, 0);
 }
 .logo:hover{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     background:white;
  }
 .logo svg{

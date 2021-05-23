@@ -19,27 +19,119 @@ body::-webkit-scrollbar-track{
 body::-webkit-scrollbar-thumb{
     background: #940000b6;
 }
-.flag{
-    margin-top: 2rem; 
-    width: 80%; 
-    height: auto;
-    margin-left: 10%;
-    border: 5px black solid;
 
+/* Slideshow container */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
 }
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.534);
+  font-size: 15px bold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/15 etc) */
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #000000;
+}
+
 #backphoto{
     background-color: rgb(0, 0, 0);
     background-image: url("../../../Giris\ Sayfasi/images/logo1bg.jpg");
     background-position:top, bottom;
     background-repeat: repeat;    
 }
+#fotombrapa{
+    background-color: rgb(0, 0, 0);
+    background-image: url("../mylife/images/universitet.jpg");
+    background-position:top, bottom;
+    background-repeat: repeat;    
+}
+#fotofamily{
+    background-color: rgb(0, 0, 0);
+    background-image: url("../mylife/images/Family.jpg");
+    background-position:top, bottom;
+    background-repeat: no-repeat;   
+    background-size: 90%;
+}
 .p1{
     color: rgb(255, 255, 255);
     font-family: 'Alice' bold;
     margin-top:2rem;
     font-size: 20px;
-    text-align: center;
+    text-align:left;
     text-shadow: 5px 5px 30px #000000;
+}
+.p2{
+    color: rgb(255, 255, 255);
+    font-family: 'Overpass';
+    margin-top:2rem;
+    font-size: 30px;
+    text-align:center;
+    margin-right: 80px;
+    text-shadow: 30px 30px 30px rgb(0, 0, 0), 3px 0px 0px rgb(126,0,9);
+}
+.image{
+   border:3px black solid ; 
+   margin-top: 50px;
 }
 .navbar
 {
@@ -59,12 +151,13 @@ body::-webkit-scrollbar-thumb{
     flex-direction: column;
 }
 .nav-item{
-    color: rgb(255, 255, 255);
+    
+    color: rgb(255, 254, 254);
 }
 .nav-link{
     display:flex;
     align-items:center;
-    width: 30px;
+    width: 91px;
     color: var(--text-primary);
     text-decoration: none;
     filter: grayscale(150%) opacity(2) brightness(1);
@@ -76,7 +169,7 @@ body::-webkit-scrollbar-thumb{
 .nav-link:hover{
     filter: grayscale(5%) opacity(1);
     background: var(--bg-secondary);
-    color:rgb(160, 0, 0);
+    color:rgb(212, 2, 2);
 }
 .link-text{
     display: none;
@@ -93,8 +186,8 @@ body::-webkit-scrollbar-thumb{
 .logo{
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 30px;
-    margin-top: -50px;
+    margin-bottom: 100px;
+    margin-top: -10px;
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.2ch;
@@ -115,7 +208,7 @@ body::-webkit-scrollbar-thumb{
 /* Small Screens*/
 @media only screen and (max-width:600px){
     .navbar{
-        bottom: 10px;
+        bottom: 0px;
         width: 100vw;
         height: 5rem;
         font-size: 0%;
@@ -131,8 +224,8 @@ body::-webkit-scrollbar-thumb{
     }
     .nav-item{
         display:inline-table;
-        margin-left: 28px;
-        margin-top: -45px;
+        margin-left: 5px;
+        margin-top: -20px;
     }
     .nav-link{
         justify-content: center;
