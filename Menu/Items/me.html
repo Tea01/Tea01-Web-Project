@@ -9,6 +9,29 @@
     <link rel = "stylesheet "href="css/me.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alice">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass">
+    <style>
+        #div1 {
+          width: 250px;
+          height: 250px;
+          padding: 10px;
+          border: 1px solid #aaaaaa;
+        }
+        </style>
+        <script>
+        function allowDrop(ev) {
+          ev.preventDefault();
+        }
+        
+        function drag(ev) {
+          ev.dataTransfer.setData("text", ev.target.id);
+        }
+        
+        function drop(ev) {
+          ev.preventDefault();
+          var data = ev.dataTransfer.getData("text");
+          ev.target.appendChild(document.getElementById(data));
+        }
+        </script>
 </head>
 <body id="backphoto">
     <div class="container-fluid">
@@ -115,6 +138,17 @@
                         </div> 
                     </div>
                 </div>
+                <div class="row">
+                    <div class="p1" style="font-family: 'Courier New', Courier, monospace; font-style:oblique;">
+                        <p >HURRY UP!!! Put some pizza for me in the box... I am starving...</p>
+                    
+                        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        <br>
+                        <img id="drag1" src="mylife/images/giphy.gif" draggable="true" ondragstart="drag(event)" width="230" height="230">
+                    </div>
+                </div>
+               
+                    
             </div>
         </div>
     </div> 

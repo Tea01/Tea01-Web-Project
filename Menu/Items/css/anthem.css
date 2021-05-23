@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb{
 .nav-link{
     display:flex;
     align-items:center;
-    width: 20px;
+    width: 30px;
     color: var(--text-primary);
     text-decoration: none;
     filter: grayscale(150%) opacity(2) brightness(1);
@@ -94,7 +94,7 @@ body::-webkit-scrollbar-thumb{
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 30px;
-    margin-top: -50px;
+    margin-top: -40px;
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.2ch;

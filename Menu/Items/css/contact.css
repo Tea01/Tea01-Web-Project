@@ -1,0 +1,172 @@
+:root{
+    --text-primary: #b80303;
+    --text-secondary:#db0000;
+    --bg-primary:#000000b0;
+    --bg-secondary:#800000;
+}
+body{
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track{
+    background: #000000;
+}
+body::-webkit-scrollbar-thumb{
+    background: #940000b6;
+}
+
+#backphoto{
+    background-color: rgb(0, 0, 0);
+    background-image: url("../../../Giris\ Sayfasi/images/logo1bg.jpg");
+    background-position:top, bottom;
+    background-repeat: repeat;    
+}
+.emailText{
+    font-weight:300;
+    font-style: italic;
+    padding: 5px;
+}
+label.invalid .emailText{
+   color:#ff0000;
+}
+label.invalid ::before
+{
+    content: "";
+    position:absolute;
+    width: 24px;
+    height: 24px;
+    top: 18px;
+    right: 5px;
+    z-index: 100;
+    background: url(error.png)no-repeat center/cover;
+}
+.p1{
+    color: rgb(255, 255, 255);
+    font-family: 'Alice' bold;
+    margin-top:2rem;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 5px 5px 30px #000000;
+}
+.navbar
+{
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: width 300ms ease;
+    font-family: 'Sunshiney';
+    font-size: 20px; 
+    margin-left: -12px;
+}
+.navbar-nav{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+    display:block;
+    flex-direction: column;
+}
+.nav-item{
+    color: rgb(255, 255, 255);
+}
+.nav-link{
+    display:flex;
+    align-items:center;
+    width: 30px;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(150%) opacity(2) brightness(1);
+    transition: var(--transition-speed);
+    color: rgb(255, 255, 255);
+    margin-top: 15px;
+    margin-left: -1rem;
+}
+.nav-link:hover{
+    filter: grayscale(5%) opacity(1);
+    background: var(--bg-secondary);
+    color:rgb(160, 0, 0);
+}
+.link-text{
+    display: none;
+    margin-left: 1rem;
+    white-space: nowrap;
+}
+.nav-link svg{
+    min-width: 2rem;
+    margin: 0 1.7rem;
+}
+.navbar:hover .link-text{
+    display:block;
+}
+.logo{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: -50px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2ch;
+    background: rgb(145, 0, 0);
+}
+.logo:hover{
+    color: rgb(0, 0, 0);
+    background:white;
+ }
+.logo svg{
+    transform: rotate(0);
+    transition: transform var(--transition-speed);
+    width: 100%;
+}
+.navbar:hover .logo svg{
+    transform: rotate(-540deg);
+}
+/* Small Screens*/
+@media only screen and (max-width:600px){
+    .navbar{
+        bottom: 10px;
+        width: 100vw;
+        height: 5rem;
+        font-size: 0%;
+    }
+    .navbar:hover{
+        width: 100%;
+    }
+    .logo{
+        display: none;
+    }
+    .navbar-nav{
+        flex-direction: row;
+    }
+    .nav-item{
+        display:inline-table;
+        margin-left: 28px;
+        margin-top: -45px;
+    }
+    .nav-link{
+        justify-content: center;
+        margin-left: 10px;
+        transition: none;
+    }
+    .main{
+        margin: 0;
+    }
+}
+/* Large Screens*/
+@media only screen and (min-width:600px){
+    .navbar{
+        top:0;
+        width: 5rem;
+        height: 100vh;
+    }
+    .navbar:hover{
+        width: 14rem;
+    }
+    .navbar:hover .link-text{
+        display: inline;
+        transition: opacity var(--transition-speed);
+    }
+}

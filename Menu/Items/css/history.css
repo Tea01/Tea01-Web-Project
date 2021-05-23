@@ -19,13 +19,16 @@ body::-webkit-scrollbar-track{
 body::-webkit-scrollbar-thumb{
     background: #940000b6;
 }
-.flag{
-    margin-top: 2rem; 
-    width: 80%; 
+.video
+{
+    margin-top: -80px;
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
     height: auto;
-    margin-left: 10%;
-    border: 5px black solid;
-
+    border: 10px black solid ;
 }
 #backphoto{
     background-color: rgb(0, 0, 0);
@@ -64,13 +67,13 @@ body::-webkit-scrollbar-thumb{
 .nav-link{
     display:flex;
     align-items:center;
-    width: 20px;
+    width: 30px;
     color: var(--text-primary);
     text-decoration: none;
     filter: grayscale(150%) opacity(2) brightness(1);
     transition: var(--transition-speed);
     color: rgb(255, 255, 255);
-    margin-top: 15px;
+    margin-top: 20px;
     margin-left: -1rem;
 }
 .nav-link:hover{
@@ -94,7 +97,7 @@ body::-webkit-scrollbar-thumb{
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 30px;
-    margin-top: -50px;
+    margin-top: -90px;
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.2ch;

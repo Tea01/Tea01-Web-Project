@@ -72,8 +72,7 @@ main{
 .nav-link{
     display:flex;
     align-items:center;
-    width: 20px;
-    color: var(--text-primary);
+    width: 30px;
     text-decoration: none;
     filter: grayscale(150%) opacity(2) brightness(1);
     transition: var(--transition-speed);
@@ -102,9 +101,9 @@ main{
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 30px;
-    margin-left: -50px;
+    margin-top: -50px;
+    background-color: var(--text-primary);
     color: white;
-    background: var(--bg-secondary);
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.2ch;    
