@@ -216,9 +216,6 @@ body::-webkit-scrollbar-thumb{
     .navbar:hover{
         width: 100%;
     }
-    .logo{
-        display: none;
-    }
     .navbar-nav{
         flex-direction: row;
     }

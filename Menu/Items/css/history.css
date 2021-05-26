@@ -19,16 +19,14 @@ body::-webkit-scrollbar-track{
 body::-webkit-scrollbar-thumb{
     background: #940000b6;
 }
-.video
-{
-    margin-top: -80px;
+.video{
+    width: 70%;
+    height: auto;
     margin-top: 2.5rem;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    width: 50%;
-    height: auto;
-    border: 10px black solid ;
+    border: 5px rgb(185, 0, 0) solid;
 }
 #backphoto{
     background-color: rgb(0, 0, 0);
@@ -118,7 +116,7 @@ body::-webkit-scrollbar-thumb{
 /* Small Screens*/
 @media only screen and (max-width:600px){
     .navbar{
-        bottom: 10px;
+        bottom: 0px;
         width: 100vw;
         height: 5rem;
         font-size: 0%;
@@ -134,7 +132,7 @@ body::-webkit-scrollbar-thumb{
     }
     .nav-item{
         display:inline-table;
-        margin-left: 28px;
+        margin-left: 15px;
         margin-top: -45px;
     }
     .nav-link{

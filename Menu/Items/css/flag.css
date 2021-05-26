@@ -115,7 +115,7 @@ body::-webkit-scrollbar-thumb{
 /* Small Screens*/
 @media only screen and (max-width:600px){
     .navbar{
-        bottom: 10px;
+        bottom: 0px;
         width: 100vw;
         height: 5rem;
         font-size: 0%;
@@ -131,7 +131,7 @@ body::-webkit-scrollbar-thumb{
     }
     .nav-item{
         display:inline-table;
-        margin-left: 28px;
+        margin-left: 15px;
         margin-top: -45px;
     }
     .nav-link{
